@@ -4,6 +4,7 @@ import Portfolio from './components/Portfolio';
 import Education from './components/Education';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import Experiences from './components/Experiences';
 
 function App() {
 
@@ -12,6 +13,7 @@ function App() {
       <Intro />
       <Portfolio />
       <Education />
+      <Experiences />
       <Contact />
       <Footer />
     </div>
