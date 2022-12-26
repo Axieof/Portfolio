@@ -9,7 +9,8 @@ export default [
         schName: 'Jurong West Secondary School',
         startYear: '2015',
         endYear: '2018',
-        achievements: ['National Cadet Corps - Staff Sergeant | Platoon Commander', 'Top Student - Computing']
+        achievements: ['National Cadet Corps - Staff Sergeant | Platoon Commander',
+                         'Top Student - Computing']
     },
     {
         schName: 'Ngee Ann Polytechnic, School of ICT',

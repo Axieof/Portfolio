@@ -29,4 +29,10 @@ export default [
         stack: ['Java'],
         link: '',
     },
+    {
+        title: 'Routine',
+        imgUrl: '/assets/Routine.png',
+        stack: ['Java', 'Android SDK'],
+        link: 'https://play.google.com/store/apps/details?id=com.mad.p03.np2020.routine',
+    },
 ]

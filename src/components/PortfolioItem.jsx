@@ -4,11 +4,14 @@ function PortfolioItem({title, imgUrl, stack, link}) {
     return (
         <div className="border-2 border-stone-900
         rounded-md overflow-hidden">
+            <a href={link} 
+            target="_blank">
             <img 
             src={imgUrl}
             alt="Project Image"
-            className="w-full h-36 md:h-48 object-cover cursor-pointer"
+            className="w-full h-36 md:h-48 object-cover cursor-pointer" 
             />
+            </a>
 
             <div className="w-full p-4">
                 <h3 className="text-lg md:text-xl mb-2 md:mb-3 font-semibold">{title}</h3>
