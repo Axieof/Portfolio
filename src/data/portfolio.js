@@ -7,7 +7,7 @@ export default [
     },
     {
         title: 'Multimatchmaker',
-        imgUrl: '',
+        imgUrl: '/assets/MultiMatchMaker.png',
         stack: ['C++'],
         link: 'https://github.com/Axieof/MultiMatchmaker',
     },
