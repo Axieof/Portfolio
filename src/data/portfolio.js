@@ -13,7 +13,7 @@ export default [
     },
     {
         title: 'SuperAdventure',
-        imgUrl: '',
+        imgUrl: '/assets/SuperAdventure.png',
         stack: ['C#'],
         link: 'https://github.com/Axieof/SuperAdventure',
     },
@@ -25,7 +25,7 @@ export default [
     },
     {
         title: 'Nyro',
-        imgUrl: '',
+        imgUrl: '/assets/NyroLogo.png',
         stack: ['Java'],
         link: '',
     },
