@@ -13,7 +13,11 @@ function Intro() {
             font-medium">Software Engineer</p>
             
             <p className="text-sm max-w-xl mb-6 
-            font-bold">Put in an intro bio here</p>
+            font-bold">I am a Software Engineer who has a 
+            passion for overcoming challenges to create software 
+            that makes an impact on the world and on people. 
+            I aspire to use my skills to create the changes I want 
+            to see in the world.</p>
         </div>
     )
 }
