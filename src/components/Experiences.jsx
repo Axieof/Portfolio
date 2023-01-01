@@ -1,10 +1,13 @@
 import React from "react";
 import experiences from "../data/experiences";
 import ExperiencesItem from "./ExperiencesItems";
+import Title from "./Title";
 
 function Experiences() {
     return (
-        <div className="flex flex-col md:flex-row 
+        <div className="text-center">
+            <Title>Experiences</Title>
+            <div className="flex flex-col md:flex-row 
         items-center justify-center pb-7">
 
             <div className="grid grid-cols-1 gap-4">
@@ -21,6 +24,8 @@ function Experiences() {
             </div>
 
         </div>
+        </div>
+        
     )
 }
 
