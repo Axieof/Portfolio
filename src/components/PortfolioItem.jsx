@@ -7,7 +7,7 @@ function PortfolioItem({title, imgUrl, stack, link}) {
             <a href={link} 
             target="_blank">
             <img 
-            src={imgUrl}
+            src={'https://axieof.github.io/Portfolio' + imgUrl}
             alt="Project Image"
             className="w-full h-36 md:h-48 object-cover cursor-pointer" 
             />
