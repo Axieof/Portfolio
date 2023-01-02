@@ -18,15 +18,15 @@ export default [
         link: 'https://github.com/Axieof/SuperAdventure',
     },
     {
-        title: 'Portfolio',
-        imgUrl: '',
-        stack: ['React', 'Vite', 'Tailwind'],
-        link: '',
-    },
-    {
         title: 'Nyro',
         imgUrl: '/assets/NyroLogo.png',
         stack: ['Java'],
+        link: '',
+    },
+    {
+        title: 'Portfolio',
+        imgUrl: '/assets/Portfolio.png',
+        stack: ['React', 'Vite', 'Tailwind'],
         link: '',
     },
     {
