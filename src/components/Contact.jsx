@@ -1,12 +1,14 @@
 import React from "react";
 import Title from "./Title";
 
+const URL = "https://getform.io/f/" + import.meta.env.VITE_GetFormSlug;
+
 function Contact() {
     return (
         <div className="flex flex-col mb-10 mx-auto">
             <div className="flex justify-center items-center">
                 <form
-                    action="https://getform.io/slug"
+                    action={URL}
                     method="POST"
                     className="flex flex-col w-full md:w-7/12"
                 >
