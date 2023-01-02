@@ -25,7 +25,7 @@ export default [
     },
     {
         title: 'Portfolio',
-        imgUrl: '/assets/Portfolio.png',
+        imgUrl: '/assets/PortfolioLogo.png',
         stack: ['React', 'Vite', 'Tailwind'],
         link: '',
     },
