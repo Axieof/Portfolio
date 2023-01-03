@@ -20,14 +20,14 @@ function Contact() {
                     type="text" 
                     name="name"
                     placeholder="Name"
-                    className="p-2 bg-transparent border-2 rounded-md 
+                    className="p-2 bg-transparent border-2 border-slate-400 rounded-md 
                     focus:outline-none"
                     />
                     <input 
                     type="text" 
                     name="email"
                     placeholder="Email Address"
-                    className="my-2 p-2 bg-transparent border-2
+                    className="my-2 p-2 bg-transparent border-2 border-slate-400
                     rounded-md focus:outline-none"
                     />
 
@@ -35,7 +35,7 @@ function Contact() {
                     name="message" 
                     placeholder="Message"
                     rows="10"
-                    className="p-2 mb-4 bg-transparent border-2
+                    className="p-2 mb-4 bg-transparent border-2 border-slate-400
                     rounded-md focus:outline-none">
                     </textarea>
 
