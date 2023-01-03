@@ -20,7 +20,7 @@ export default [
     {
         title: 'Nyro',
         imgUrl: '/assets/NyroLogo.png',
-        stack: ['Java'],
+        stack: ['Java', 'WIP'],
         link: '',
     },
     {
