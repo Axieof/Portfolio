@@ -9,7 +9,8 @@ function PortfolioItem({title, imgUrl, stack, link}) {
             <img 
             src={'https://axieof.github.io/Portfolio' + imgUrl}
             alt="Project Image"
-            className="w-full h-36 md:h-48 object-cover cursor-pointer" 
+            className="w-full h-36 md:h-48 object-cover c
+            ursor-pointer border-b-2 border-stone-900" 
             />
             </a>
 

@@ -16,11 +16,11 @@ function ExperiencesItem({company, position, description, duration, startYear}) 
                   {duration}
                </div>
             </p>
-            <h2>
+            <h2 className="text-zinc-900">
                 {position}
             </h2>
             <div>
-               <p className="w-64 inline-block full my-2 text-base font-normal text-stone-500 dark:text-stone-400">
+               <p className="w-64 inline-block full my-2 text-base font-normal text-stone-600 dark:text-stone-400">
                   {description}
                </p>
             </div>
