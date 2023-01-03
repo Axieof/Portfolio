@@ -9,7 +9,7 @@ import Experiences from './components/Experiences';
 function App() {
 
   return (
-    <div className="App">
+    <div className="App bg-slate-200">
       <Intro />
       <Portfolio />
       {/*<Education />*/}
