@@ -1,7 +1,7 @@
 import React from "react";
 import Title from "./Title";
 
-const URL = "https://getform.io/f/" + import.meta.env.VITE_GetFormSlug;
+const URL = "https://getform.io/f/23705d46-feab-412b-b210-4a01dc643482";
 
 function Contact() {
     return (
