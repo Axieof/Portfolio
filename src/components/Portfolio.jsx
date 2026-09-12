@@ -7,7 +7,7 @@ const TECHNOLOGIES = ["C#", "ASP.NET", "HTML", "CSS", "C++", "Java", "React", "V
 
 const portfolio = [
   { title: "Realight", specialization: "Game", stack: ["C#", "ASP.NET", "HTML", "CSS"], link: "https://github.com/Axieof/Realight_Game", image: "/Portfolio/assets/RealightImg.png" },
-  { title: "Multimatchmaker", specialization: "Backend", stack: ["C++"], link: "https://github.com/Axieof/MultiMatchmaker",image: "/Portfolio/assets/MultiMatchmaker.png" },
+  { title: "Multimatchmaker", specialization: "Backend", stack: ["C++"], link: "https://github.com/Axieof/MultiMatchmaker",image: "/Portfolio/assets/MultiMatchMaker.png" },
   { title: "SuperAdventure", specialization: "Game", stack: ["C#"], link: "https://github.com/Axieof/SuperAdventure",image: "/Portfolio/assets/SuperAdventure.png"  },
   { title: "Nyro", specialization: "Modding", stack: ["Java", "WIP"], link: "",image: "/Portfolio/assets/NyroLogo.png"  },
   { title: "Portfolio", specialization: "Frontend", stack: ["React", "Vite", "Tailwind"], link: "",image: "/Portfolio/assets/PortfolioLogo.png"  },
