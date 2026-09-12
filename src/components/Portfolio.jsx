@@ -2,8 +2,33 @@ import { useState } from "react";
 import Dropdown from "./Dropdown";
 import PortfolioItem from "./PortfolioItem";
 
-const SPECIALIZATIONS = ["Cloud", "Game", "Algorithm", "AI", "Frontend", "Backend", "Modding"];
-const TECHNOLOGIES = ["C#", "ASP.NET", "HTML", "CSS", "C++", "Java", "React", "Vite", "Tailwind", "Android SDK", "WIP"];
+const SPECIALIZATIONS = [
+    "Cloud", 
+    "Game", 
+    "Modding",
+    "Algorithm",
+    "IOT",
+    "Cybersecurity", 
+    "AI", 
+    "Frontend", 
+    "Backend"];
+
+const TECHNOLOGIES = [
+    "WIP",
+    "Python",
+    "C#", 
+    "C++", 
+    "Java",
+    "SQL",
+    "ASP.NET", 
+    "HTML", 
+    "CSS", 
+    "React",
+    "Node", 
+    "Vite", 
+    "Tailwind", 
+    "Android SDK", 
+    ];
 
 const portfolio = [
   { title: "Realight", specialization: "Game", stack: ["C#", "ASP.NET", "HTML", "CSS"], link: "https://github.com/Axieof/Realight_Game", image: "/Portfolio/assets/RealightImg.png" },
@@ -15,60 +40,52 @@ const portfolio = [
 ];
 
 function Portfolio({ t }) {
-  const [specOpen, setSpecOpen] = useState(false);
-  const [techOpen, setTechOpen] = useState(false);
   const [selectedSpec, setSelectedSpec] = useState(null);
   const [selectedTech, setSelectedTech] = useState([]);
-
+ 
   const toggleTech = (tech) => {
     setSelectedTech((prev) => (prev.includes(tech) ? prev.filter((x) => x !== tech) : [...prev, tech]));
   };
-
+ 
   const filtered = portfolio.filter((p) => {
     const specMatch = !selectedSpec || p.specialization === selectedSpec;
     const techMatch = selectedTech.length === 0 || p.stack.some((s) => selectedTech.includes(s));
     return specMatch && techMatch;
   });
-
+ 
+  const pillStyle = (active) => ({
+    padding: "5px 12px", borderRadius: 999, fontFamily: "monospace", fontSize: 12, cursor: "pointer",
+    border: `1px solid ${active ? t.accent : t.line}`,
+    background: active ? t.accent : "transparent",
+    color: active ? t.accentText : t.muted,
+  });
+ 
   return (
     <div style={{ padding: "40px 16px", textAlign: "center", position: "relative", zIndex: 2 }}>
-      <div style={{ display: "flex", gap: 10, justifyContent: "center", marginBottom: 28, flexWrap: "wrap" }}>
-        <Dropdown label={selectedSpec ? `Specialization: ${selectedSpec}` : "Specialization"} isOpen={specOpen} onToggle={() => { setSpecOpen(!specOpen); setTechOpen(false); }} t={t}>
-          <button
-            onClick={() => { setSelectedSpec(null); setSpecOpen(false); }}
-            style={{ textAlign: "left", background: !selectedSpec ? t.accent : "transparent", color: !selectedSpec ? t.accentText : t.ink, padding: "6px 8px", borderRadius: 4, border: "none", cursor: "pointer", fontFamily: "monospace", fontSize: 12 }}
-          >
-            All
-          </button>
+      <div style={{
+        border: `1px solid ${t.line}`, borderRadius: 8, padding: 16,
+        maxWidth: 820, margin: "0 auto 28px", textAlign: "left",
+      }}>
+        <div style={{ display: "flex", flexWrap: "wrap", gap: 8, alignItems: "center", marginBottom: 12 }}>
+          <span style={{ fontFamily: "monospace", fontSize: 11, color: t.muted, width: 110 }}>Specialization</span>
+          <button onClick={() => setSelectedSpec(null)} style={pillStyle(!selectedSpec)}>All</button>
           {SPECIALIZATIONS.map((spec) => (
-            <button
-              key={spec}
-              onClick={() => { setSelectedSpec(spec); setSpecOpen(false); }}
-              style={{ textAlign: "left", background: selectedSpec === spec ? t.accent : "transparent", color: selectedSpec === spec ? t.accentText : t.ink, padding: "6px 8px", borderRadius: 4, border: "none", cursor: "pointer", fontFamily: "monospace", fontSize: 12 }}
-            >
+            <button key={spec} onClick={() => setSelectedSpec(spec)} style={pillStyle(selectedSpec === spec)}>
               {spec}
             </button>
           ))}
-        </Dropdown>
-
-        <Dropdown label={selectedTech.length ? `Technologies (${selectedTech.length})` : "Technologies"} isOpen={techOpen} onToggle={() => { setTechOpen(!techOpen); setSpecOpen(false); }} t={t}>
+        </div>
+        <div style={{ display: "flex", flexWrap: "wrap", gap: 8, alignItems: "center" }}>
+          <span style={{ fontFamily: "monospace", fontSize: 11, color: t.muted, width: 110 }}>Technologies</span>
+          <button onClick={() => setSelectedTech([])} style={pillStyle(selectedTech.length === 0)}>All</button>
           {TECHNOLOGIES.map((tech) => (
-            <label key={tech} style={{ display: "flex", alignItems: "center", gap: 8, fontFamily: "monospace", fontSize: 12, color: t.ink, cursor: "pointer" }}>
-              <input type="checkbox" checked={selectedTech.includes(tech)} onChange={() => toggleTech(tech)} />
+            <button key={tech} onClick={() => toggleTech(tech)} style={pillStyle(selectedTech.includes(tech))}>
               {tech}
-            </label>
-          ))}
-          {selectedTech.length > 0 && (
-            <button
-              onClick={() => setSelectedTech([])}
-              style={{ marginTop: 4, textAlign: "left", background: "transparent", color: t.muted, border: "none", cursor: "pointer", fontFamily: "monospace", fontSize: 11 }}
-            >
-              clear all
             </button>
-          )}
-        </Dropdown>
+          ))}
+        </div>
       </div>
-
+ 
       <div style={{
         display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))",
         gap: 16, maxWidth: 900, margin: "0 auto",

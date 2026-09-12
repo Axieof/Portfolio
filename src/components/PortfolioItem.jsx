@@ -12,7 +12,7 @@ function PortfolioItem({ title, stack, link, image, t }) {
       <div
         style={{
           width: "100%",
-          height: 120,
+          height: 180,
           background: t.line,
           display: "flex",
           alignItems: "center",

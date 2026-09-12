@@ -11,7 +11,10 @@ const fieldStyle = (t) => ({
 
 function Contact({ t }) {
   return (
-    <div style={{ display: "flex", justifyContent: "center", padding: "40px 16px", position: "relative", zIndex: 2 }}>
+    <div style={{ display: "flex", flexDirection: "column", alignItems: "center", padding: "40px 16px", position: "relative", zIndex: 2 }}>
+      <p style={{ fontFamily: "monospace", fontSize: 15, color: t.ink, marginBottom: 20, textAlign: "center" }}>
+        Interested to find out more? <span style={{ color: t.accent }}>Contact me.</span>
+      </p>
       <form style={{ display: "flex", flexDirection: "column", gap: 12, width: "100%", maxWidth: 460 }} onSubmit={(e) => e.preventDefault()}>
         {["Name", "Email address"].map((ph) => (
           <input key={ph} placeholder={ph} style={fieldStyle(t)} />
