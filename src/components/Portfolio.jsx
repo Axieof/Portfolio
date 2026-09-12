@@ -6,12 +6,12 @@ const SPECIALIZATIONS = ["Cloud", "Game", "Algorithm", "AI", "Frontend", "Backen
 const TECHNOLOGIES = ["C#", "ASP.NET", "HTML", "CSS", "C++", "Java", "React", "Vite", "Tailwind", "Android SDK", "WIP"];
 
 const portfolio = [
-  { title: "Realight", specialization: "Game", stack: ["C#", "ASP.NET", "HTML", "CSS"], link: "https://github.com/Axieof/Realight_Game", image: "/assets/RealightImg.png" },
-  { title: "Multimatchmaker", specialization: "Backend", stack: ["C++"], link: "https://github.com/Axieof/MultiMatchmaker",image: "/assets/MultiMatchmaker.png" },
-  { title: "SuperAdventure", specialization: "Game", stack: ["C#"], link: "https://github.com/Axieof/SuperAdventure",image: "/assets/SuperAdventure.png"  },
-  { title: "Nyro", specialization: "Modding", stack: ["Java", "WIP"], link: "",image: "/assets/NyroLogo.png"  },
-  { title: "Portfolio", specialization: "Frontend", stack: ["React", "Vite", "Tailwind"], link: "",image: "/assets/PortfolioLogo.png"  },
-  { title: "Routine", specialization: "Frontend", stack: ["Java", "Android SDK"], link: "https://play.google.com/store/apps/details?id=com.mad.p03.np2020.routine",image: "/assets/Routine.png"  },
+  { title: "Realight", specialization: "Game", stack: ["C#", "ASP.NET", "HTML", "CSS"], link: "https://github.com/Axieof/Realight_Game", image: "/Portfolio/assets/RealightImg.png" },
+  { title: "Multimatchmaker", specialization: "Backend", stack: ["C++"], link: "https://github.com/Axieof/MultiMatchmaker",image: "/Portfolio/assets/MultiMatchmaker.png" },
+  { title: "SuperAdventure", specialization: "Game", stack: ["C#"], link: "https://github.com/Axieof/SuperAdventure",image: "/Portfolio/assets/SuperAdventure.png"  },
+  { title: "Nyro", specialization: "Modding", stack: ["Java", "WIP"], link: "",image: "/Portfolio/assets/NyroLogo.png"  },
+  { title: "Portfolio", specialization: "Frontend", stack: ["React", "Vite", "Tailwind"], link: "",image: "/Portfolio/assets/PortfolioLogo.png"  },
+  { title: "Routine", specialization: "Frontend", stack: ["Java", "Android SDK"], link: "https://play.google.com/store/apps/details?id=com.mad.p03.np2020.routine",image: "/Portfolio/assets/Routine.png"  },
 ];
 
 function Portfolio({ t }) {
