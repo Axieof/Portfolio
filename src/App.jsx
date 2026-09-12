@@ -8,11 +8,7 @@ const SPECIALIZATIONS = ["Cloud", "Game", "Algorithm", "AI", "Frontend", "Backen
 const TECHNOLOGIES = ["C#", "ASP.NET", "HTML", "CSS", "C++", "Java", "React", "Vite", "Tailwind", "Android SDK", "WIP"];
 
 const ACCENTS = [
-  { id: "amber", label: "Amber", hex: "#FF8A3D" },
-  { id: "teal", label: "Teal", hex: "#5EEAD4" },
   { id: "coral", label: "Coral", hex: "#FF6B6B" },
-  { id: "violet", label: "Violet", hex: "#A78BFA" },
-  { id: "mint", label: "Mint", hex: "#4ADE80" },
 ];
 
 function getTokens(mode, accentHex) {
