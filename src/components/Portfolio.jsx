@@ -6,12 +6,12 @@ const SPECIALIZATIONS = ["Cloud", "Game", "Algorithm", "AI", "Frontend", "Backen
 const TECHNOLOGIES = ["C#", "ASP.NET", "HTML", "CSS", "C++", "Java", "React", "Vite", "Tailwind", "Android SDK", "WIP"];
 
 const portfolio = [
-  { title: "Realight", specialization: "Game", stack: ["C#", "ASP.NET", "HTML", "CSS"], link: "https://github.com/Axieof/Realight_Game", image: "/assets/realight.png" },
-  { title: "Multimatchmaker", specialization: "Backend", stack: ["C++"], link: "https://github.com/Axieof/MultiMatchmaker" },
-  { title: "SuperAdventure", specialization: "Game", stack: ["C#"], link: "https://github.com/Axieof/SuperAdventure" },
-  { title: "Nyro", specialization: "Modding", stack: ["Java", "WIP"], link: "" },
-  { title: "Portfolio", specialization: "Frontend", stack: ["React", "Vite", "Tailwind"], link: "" },
-  { title: "Routine", specialization: "Frontend", stack: ["Java", "Android SDK"], link: "https://play.google.com/store/apps/details?id=com.mad.p03.np2020.routine" },
+  { title: "Realight", specialization: "Game", stack: ["C#", "ASP.NET", "HTML", "CSS"], link: "https://github.com/Axieof/Realight_Game", image: "/assets/RealightImg.png" },
+  { title: "Multimatchmaker", specialization: "Backend", stack: ["C++"], link: "https://github.com/Axieof/MultiMatchmaker",image: "/assets/MultiMatchmaker.png" },
+  { title: "SuperAdventure", specialization: "Game", stack: ["C#"], link: "https://github.com/Axieof/SuperAdventure",image: "/assets/SuperAdventure.png"  },
+  { title: "Nyro", specialization: "Modding", stack: ["Java", "WIP"], link: "",image: "/assets/NyroLogo.png"  },
+  { title: "Portfolio", specialization: "Frontend", stack: ["React", "Vite", "Tailwind"], link: "",image: "/assets/PortfolioLogo.png"  },
+  { title: "Routine", specialization: "Frontend", stack: ["Java", "Android SDK"], link: "https://play.google.com/store/apps/details?id=com.mad.p03.np2020.routine",image: "/assets/Routine.png"  },
 ];
 
 function Portfolio({ t }) {
