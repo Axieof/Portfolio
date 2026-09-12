@@ -6,7 +6,7 @@ const SPECIALIZATIONS = ["Cloud", "Game", "Algorithm", "AI", "Frontend", "Backen
 const TECHNOLOGIES = ["C#", "ASP.NET", "HTML", "CSS", "C++", "Java", "React", "Vite", "Tailwind", "Android SDK", "WIP"];
 
 const portfolio = [
-  { title: "Realight", specialization: "Game", stack: ["C#", "ASP.NET", "HTML", "CSS"], link: "https://github.com/Axieof/Realight_Game" },
+  { title: "Realight", specialization: "Game", stack: ["C#", "ASP.NET", "HTML", "CSS"], link: "https://github.com/Axieof/Realight_Game", image: "/assets/realight.png" },
   { title: "Multimatchmaker", specialization: "Backend", stack: ["C++"], link: "https://github.com/Axieof/MultiMatchmaker" },
   { title: "SuperAdventure", specialization: "Game", stack: ["C#"], link: "https://github.com/Axieof/SuperAdventure" },
   { title: "Nyro", specialization: "Modding", stack: ["Java", "WIP"], link: "" },
