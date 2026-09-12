@@ -1,57 +1,32 @@
-import React from "react";
-import Title from "./Title";
+const URL = "https://getform.io/f/23705d46-feab-412b-b210-4a01dc643482"; 
 
-const URL = "https://getform.io/f/23705d46-feab-412b-b210-4a01dc643482";
+const fieldStyle = (t) => ({ 
+    padding: 10, 
+    background: t.panel, 
+    border: `1px solid ${t.line}`, 
+    borderRadius: 6, color: t.ink, 
+    fontSize: 14, 
+    outline: "none", 
+}); 
 
-function Contact() {
-    return (
-        <div className="flex flex-col mb-10 mx-auto">
-            <div className="flex justify-center items-center">
-                <form
-                    action={URL}
-                    method="POST"
-                    className="flex flex-col w-full md:w-7/12"
-                >
-                    <div className="text-center">
-                        <Title>Contact</Title>
-                    </div>
-                    
-                    <input 
-                    type="text" 
-                    name="name"
-                    placeholder="Name"
-                    className="p-2 bg-transparent border-2 border-slate-400 rounded-md 
-                    focus:outline-none"
-                    />
-                    <input 
-                    type="text" 
-                    name="email"
-                    placeholder="Email Address"
-                    className="my-2 p-2 bg-transparent border-2 border-slate-400
-                    rounded-md focus:outline-none"
-                    />
-
-                    <textarea 
-                    name="message" 
-                    placeholder="Message"
-                    rows="10"
-                    className="p-2 mb-4 bg-transparent border-2 border-slate-400
-                    rounded-md focus:outline-none">
-                    </textarea>
-
-                    <button 
-                    type="submit"
-                    className="text-center inline-block
-                    px-8 py-3 w-max text-base font-medium
-                    rounded-md text-white
-                    bg-gradient-to-r from-red-500 
-                    to-yellow-500 drop-shadow-md">
-                        Contact Me!
-                    </button>
-                </form>
-            </div>
-        </div>
-    )
+function Contact({ t }) {
+  return (
+    <div style={{ display: "flex", justifyContent: "center", padding: "40px 16px", position: "relative", zIndex: 2 }}>
+      <form style={{ display: "flex", flexDirection: "column", gap: 12, width: "100%", maxWidth: 460 }} onSubmit={(e) => e.preventDefault()}>
+        {["Name", "Email address"].map((ph) => (
+          <input key={ph} placeholder={ph} style={fieldStyle(t)} />
+        ))}
+        <textarea placeholder="Message" rows={6} style={fieldStyle(t)} />
+        <button style={{
+          marginTop: 8, padding: "12px 24px", width: "max-content", fontFamily: "monospace",
+          fontSize: 14, borderRadius: 6, border: "none", cursor: "pointer",
+          color: t.accentText, background: t.accent,
+        }}>
+          Send message
+        </button>
+      </form>
+    </div>
+  );
 }
 
-export default Contact
+export default Contact;
