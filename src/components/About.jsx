@@ -9,9 +9,6 @@ return (
             repair, backend services, and shipping production software, and I
             care about building things that hold up under real use.
         </p>
-        <p style={{ marginTop: 12, fontSize: 13, fontStyle: "italic", color: t.muted }}>
-            ↑ replace this paragraph with your own bio
-        </p>
         </div>
         <div
             style={{
