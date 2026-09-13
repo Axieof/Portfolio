@@ -1,4 +1,4 @@
-function PortfolioItem({ title, stack, link, image, t }) {
+function PortfolioItem({ title, specialization, stack, link, image, t }) {
   return (
     <div
       style={{
@@ -49,21 +49,20 @@ function PortfolioItem({ title, stack, link, image, t }) {
           {title}
         </h3>
 
+        <div style={{
+          fontFamily: "monospace", fontSize: 11, letterSpacing: "0.05em",
+          color: t.accent, textTransform: "uppercase", marginBottom: 10,
+        }}>
+          {specialization}
+        </div>
+
         <div style={{ display: "flex", flexWrap: "wrap", gap: 8 }}>
           {stack.map((item) => (
-            <span
-              key={item}
-              style={{
-                padding: "4px 8px",
-                fontFamily: "monospace",
-                fontSize: 12,
-                borderRadius: 4,
-                border: `1px solid ${
-                  item === "WIP" ? t.accent : t.line
-                }`,
-                color: item === "WIP" ? t.accent : t.muted,
-              }}
-            >
+            <span key={item} className="tag-pill" style={{
+              padding: "4px 8px", fontFamily: "monospace", fontSize: 12, borderRadius: 4,
+              border: `1px solid ${item === "WIP" ? t.accent : t.line}`,
+              color: item === "WIP" ? t.accent : t.muted,
+            }}>
               {item}
             </span>
           ))}

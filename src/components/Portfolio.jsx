@@ -11,7 +11,8 @@ const SPECIALIZATIONS = [
     "Cybersecurity", 
     "AI", 
     "Frontend", 
-    "Backend"];
+    "Backend",
+    "App"];
 
 const TECHNOLOGIES = [
     "WIP",
@@ -32,11 +33,11 @@ const TECHNOLOGIES = [
 
 const portfolio = [
   { title: "Realight", specialization: "Game", stack: ["C#", "ASP.NET", "HTML", "CSS"], link: "https://github.com/Axieof/Realight_Game", image: "/Portfolio/assets/RealightImg.png" },
-  { title: "Multimatchmaker", specialization: "Backend", stack: ["C++"], link: "https://github.com/Axieof/MultiMatchmaker",image: "/Portfolio/assets/MultiMatchMaker.png" },
+  { title: "Multimatchmaker", specialization: "Algorithm", stack: ["C++"], link: "https://github.com/Axieof/MultiMatchmaker",image: "/Portfolio/assets/MultiMatchMaker.png" },
   { title: "SuperAdventure", specialization: "Game", stack: ["C#"], link: "https://github.com/Axieof/SuperAdventure",image: "/Portfolio/assets/SuperAdventure.png"  },
   { title: "Nyro", specialization: "Modding", stack: ["Java", "WIP"], link: "",image: "/Portfolio/assets/NyroLogo.png"  },
   { title: "Portfolio", specialization: "Frontend", stack: ["React", "Vite", "Tailwind"], link: "",image: "/Portfolio/assets/PortfolioLogo.png"  },
-  { title: "Routine", specialization: "Frontend", stack: ["Java", "Android SDK"], link: "https://play.google.com/store/apps/details?id=com.mad.p03.np2020.routine",image: "/Portfolio/assets/Routine.png"  },
+  { title: "Routine", specialization: "App", stack: ["Java", "Android SDK"], link: "https://play.google.com/store/apps/details?id=com.mad.p03.np2020.routine",image: "/Portfolio/assets/Routine.png"  },
 ];
 
 function Portfolio({ t }) {
